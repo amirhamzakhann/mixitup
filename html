@@ -1,0 +1,23 @@
+First Add to html file mixitup.js file
+
+//Html Button Side Start Here//
+
+<button data-filter="all">All</button>
+<button data-filter=".green">Green</button>
+<button data-filter=".blue">Blue</button>
+<button data-filter=".pink">Pink</button>
+
+//Button Side End Here//
+
+//Html Item Start here//
+<div class="button-item">
+<div class="mix green"></div>
+<div class="mix blue"></div>
+<div class="mix pink"></div>
+</div>
+
+// Html Side End Here//
+
+//Add this script custom js file//
+var containerEl = document.querySelector('.button-item');
+var mixer = mixitup(containerEl);
